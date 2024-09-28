@@ -1,0 +1,199 @@
+/* Đặt các biến màu sắc */
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --secondary-color: #333;
+    --text-color: #666;
+    --bg-color: #f0f0f0;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+}
+
+.main-menu > li > a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.main-menu > li > a:hover {
+    background-color: var(--primary-hover-color);
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    margin-top: 80px; /* Khoảng cách dưới navbar */
+    padding: 20px;
+    max-width: 800px; /* Đặt chiều rộng tối đa của nội dung */
+    margin-left: auto; /* Căn giữa khung trang */
+    margin-right: auto; /* Căn giữa khung trang */
+}
+
+.container {
+    max-width: 1200px; /* Tăng chiều rộng tối đa cho khung CV */
+    margin: auto;
+    background: var(--card-bg);
+    padding: 40px; /* Tăng padding cho khung */
+    border-radius: 10px; /* Tăng độ cong cho các góc */
+    box-shadow: 0 4px 15px var(--card-shadow); /* Thêm bóng đổ cho khung */
+}
+
+/* CV Layout */
+.cv-layout {
+    display: flex; /* Sử dụng Flexbox để tạo cột */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%; /* Chiếm 30% chiều rộng */
+    padding-right: 30px; /* Khoảng cách bên phải cho cột chính */
+}
+
+.main-content {
+    width: 70%; /* Chiếm 70% chiều rộng */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px; /* Khoảng cách dưới header */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color); /* Thêm viền cho ảnh đại diện */
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 2.5em; /* Tăng kích thước chữ tiêu đề */
+    margin: 10px 0;
+    color: var(--secondary-color); /* Màu sắc cho tiêu đề chính */
+}
+
+h2 {
+    font-size: 24px; /* Tăng kích thước chữ tiêu đề */
+    color: var(--primary-color); /* Màu chữ tiêu đề */
+    border-bottom: 2px solid var(--primary-color); /* Đường viền cho tiêu đề */
+    padding-bottom: 5px; /* Khoảng cách dưới tiêu đề */
+    margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+}
+
+h3 {
+    font-size: 22px; /* Kích thước tiêu đề cho các công việc */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6; /* Khoảng cách giữa các dòng */
+    color: var(--text-color); /* Thay đổi màu chữ */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 30px 50px; /* Tăng kích thước padding cho nút */
+    margin-top: 10px;
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 8px; /* Tăng độ cong của nút */
+    margin: 5px;
+    font-size: 18px; /* Tăng kích thước chữ trong nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền khi hover */
+}
+
+.button:hover {
+    background-color: var(--primary-hover-color); /* Đổi màu nền khi hover */
+}
+
+/* Đặc biệt cho các nút lap1, lap2, lap3 */
+.lap-button {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút */
+    flex-direction: column; /* Chuyển hướng thành cột */
+    padding: 15px 35px; /* Tăng kích thước padding cho nút lap */
+    font-size: 20px; /* Tăng kích thước chữ trong nút lap */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px; /* Khoảng cách giữa các section */
+    padding: 20px; /* Thêm padding cho các section */
+    background-color: #f9f9f9; /* Màu nền cho các section */
+    border: 1px solid #e0e0e0; /* Đường viền cho các section */
+    border-radius: 5px; /* Độ cong cho các góc */
+    transition: box-shadow 0.3s; /* Hiệu ứng chuyển đổi bóng */
+}
+
+section:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Tăng bóng khi hover vào section */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-menu {
+        flex-direction: column; /* Thay đổi menu chính thành cột trên thiết bị di động */
+    }
+
+    .main-menu > li > a {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .cv-layout {
+        flex-direction: column; /* Chuyển sang cột trên thiết bị di động */
+    }
+
+    .sidebar, .main-content {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+}
+
+/* Link styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Gạch chân khi hover vào link */
+}
