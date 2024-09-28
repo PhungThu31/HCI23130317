@@ -43,10 +43,10 @@ body {
 
 .main-menu > li > a {
     display: block;
-    padding: 15px 30px;
+    padding: 15px 20px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     transition: background-color 0.3s;
 }
 
@@ -59,16 +59,16 @@ body {
     text-align: center;
     margin-top: 80px; /* Khoảng cách dưới navbar */
     padding: 20px;
-    max-width: 800px; /* Đặt chiều rộng tối đa của nội dung */
+    max-width: 600px; /* Đặt chiều rộng tối đa của nội dung */
     margin-left: auto; /* Căn giữa khung trang */
     margin-right: auto; /* Căn giữa khung trang */
 }
 
 .container {
-    max-width: 1200px; /* Tăng chiều rộng tối đa cho khung CV */
+    max-width: 800px; /* Tăng chiều rộng tối đa cho khung CV */
     margin: auto;
     background: var(--card-bg);
-    padding: 40px; /* Tăng padding cho khung */
+    padding: 30px; /* Tăng padding cho khung */
     border-radius: 10px; /* Tăng độ cong cho các góc */
     box-shadow: 0 4px 15px var(--card-shadow); /* Thêm bóng đổ cho khung */
 }
@@ -80,36 +80,36 @@ body {
 
 /* Sidebar */
 .sidebar {
-    width: 30%; /* Chiếm 30% chiều rộng */
-    padding-right: 30px; /* Khoảng cách bên phải cho cột chính */
+    width: 40%; /* Chiếm 30% chiều rộng */
+    padding-right: 20px; /* Khoảng cách bên phải cho cột chính */
 }
 
 .main-content {
-    width: 70%; /* Chiếm 70% chiều rộng */
+    width: 60%; /* Chiếm 70% chiều rộng */
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 30px; /* Khoảng cách dưới header */
+    margin-bottom: 20px; /* Khoảng cách dưới header */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 3px solid var(--primary-color); /* Thêm viền cho ảnh đại diện */
 }
 
 /* Tiêu đề */
 h1 {
-    font-size: 2.5em; /* Tăng kích thước chữ tiêu đề */
+    font-size: 2.2em; /* Tăng kích thước chữ tiêu đề */
     margin: 10px 0;
     color: var(--secondary-color); /* Màu sắc cho tiêu đề chính */
 }
 
 h2 {
-    font-size: 24px; /* Tăng kích thước chữ tiêu đề */
+    font-size: 18px; /* Tăng kích thước chữ tiêu đề */
     color: var(--primary-color); /* Màu chữ tiêu đề */
     border-bottom: 2px solid var(--primary-color); /* Đường viền cho tiêu đề */
     padding-bottom: 5px; /* Khoảng cách dưới tiêu đề */
@@ -117,27 +117,27 @@ h2 {
 }
 
 h3 {
-    font-size: 22px; /* Kích thước tiêu đề cho các công việc */
+    font-size: 20px; /* Kích thước tiêu đề cho các công việc */
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6; /* Khoảng cách giữa các dòng */
+    font-size: 15px;
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
     color: var(--text-color); /* Thay đổi màu chữ */
 }
 
 /* Button styles */
 .button {
     display: inline-block;
-    padding: 30px 50px; /* Tăng kích thước padding cho nút */
+    padding: 20px 40px; /* Tăng kích thước padding cho nút */
     margin-top: 10px;
     color: white;
     background-color: var(--primary-color);
     text-decoration: none;
     border-radius: 8px; /* Tăng độ cong của nút */
     margin: 5px;
-    font-size: 18px; /* Tăng kích thước chữ trong nút */
+    font-size: 16px; /* Tăng kích thước chữ trong nút */
     transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền khi hover */
 }
 
@@ -157,7 +157,7 @@ p {
 /* Section styles */
 section {
     margin-bottom: 20px; /* Khoảng cách giữa các section */
-    padding: 20px; /* Thêm padding cho các section */
+    padding: 15px; /* Thêm padding cho các section */
     background-color: #f9f9f9; /* Màu nền cho các section */
     border: 1px solid #e0e0e0; /* Đường viền cho các section */
     border-radius: 5px; /* Độ cong cho các góc */
@@ -176,7 +176,7 @@ section:hover {
 
     .main-menu > li > a {
         padding: 10px 15px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .cv-layout {
